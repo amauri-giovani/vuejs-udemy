@@ -1,0 +1,109 @@
+/* GERAL */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    margin: 10px 0;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* SCORES */
+
+.scores {
+    display: flex;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.score h1 {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.life-bar {
+    border: 1px solid #AAA;
+    width: 80%;
+    height: 20px;
+}
+
+.life-bar .life {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: green;
+}
+
+.life-bar .life.danger {
+    background-color: red;
+}
+
+
+/* RESULT */
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.result .win {
+    color: green;
+}
+
+.result .lose {
+    color: red;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: darkslategrey;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.btn.attack {
+    background-color: lightblue;
+}
+
+.btn.special-attack {
+    background-color: lightcoral;
+}
+
+.btn.heal {
+    background-color: lightseagreen;
+}
+
+.btn.give-up {
+    background-color: lightgray;
+}
+
+.btn.new-game {
+    background-color: lightskyblue;
+}
